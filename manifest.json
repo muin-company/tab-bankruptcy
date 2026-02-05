@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Bankruptcy",
+  "version": "1.0.0",
+  "description": "Declare tab bankruptcy - close all tabs older than X days, optionally saving them as bookmarks first.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "bookmarks"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "options_page": "settings.html",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
